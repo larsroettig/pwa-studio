@@ -1,4 +1,4 @@
-module.exports = {
+const venia = {
     mode: 'jit',
     purge: {
         content: ['./src/**/*.css'],
@@ -11,3 +11,9 @@ module.exports = {
     },
     separator: '_'
 };
+
+const config = {
+    presets: [venia]
+};
+
+module.exports = config;
